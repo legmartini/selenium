@@ -7,7 +7,7 @@ MAX_PAGE_DIG = 3  # Quantidade de digitos para url da página.
 with open('result.csv', 'w') as f:
     f.write("Buyers, Price\n")
 
-driver = webdriver.Chrome()  # Inicia o navegador.
+driver = webdriver.Chrome()  # Inicia o navegador. Inserir o caminho do driver em questão nos parênteses.
 
 for i in range(1, MAX_PAGE_NUM + 1):  # Muda a url para automatizar o processo.
     page_num = (MAX_PAGE_DIG - len(str(i))) * "0" + str(i)
